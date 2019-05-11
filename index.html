@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Important Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      rel="shortcut icon"
+      href="frontend_test/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>FrontendTest</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="frontend_test/css/bootstrap.css" rel="stylesheet" />
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="frontend_test/css/slick.css" />
+    <!-- Custom styles-->
+    <link href="frontend_test/css/main.css" rel="stylesheet" />
+    <style>
+      /* .mobile-wrapper {
+        max-width: 750px;
+        margin: 0 auto;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="mobile-wrapper">
+        <div class="container">
+          <!-- main product container -->
+          <div class="product-show-container">
+            <div class="row no-gutters">
+              <div class="col-12">
+                <!-- product img slider and details -->
+                <div class="product-details">
+                  <div class="card row flex-md-row align-items-center">
+                    <div class="product-slider col-lg-6">
+                      <div class="product-img">
+                        <img
+                          src="./frontend_test/images/product-img-1.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="product-img">
+                        <img
+                          src="./frontend_test/images/product-img-2.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="product-img">
+                        <img
+                          src="./frontend_test/images/product-img-3.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body col-lg-6">
+                      <div class="product-description">
+                        <h1>Nice Adidass Sneakers</h1>
+                        <p>
+                          This shoe is cool and it is almost not used. I want to
+                          swop it because Lorem Ipsum is simply dummy text of
+                          the printing and typesetting industry. Lorem Ipsum has
+                          been the industry's standard dummy text ever since the
+                          1500s,
+                        </p>
+                      </div>
+                      <div class="product-size">
+                        <h3>Size: 43</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="seller-user-container">
+                  <!-- seller information -->
+                  <div class="product-seller-container">
+                    <h1>About the Seller:</h1>
+                    <div class="product-seller">
+                      <div class="profile-img">
+                        <img
+                          src="./frontend_test/images/profile-picture.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="seller-info">
+                        <h1>Jacob H.</h1>
+                        <ul class="list-unstyled d-flex">
+                          <li>41 Years Old</li>
+                          <li>2300 Copenhagen</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btn-conatiner">
+                      <a href="https://www.google.com/" class="btn btn-primary"
+                        >More from Seller</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-danger"
+                        data-toggle="modal"
+                        data-target="#report_seller"
+                        >Report</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- chat about product -->
+                  <div class="chat-container">
+                    <div class="chat-text-container">
+                      <div class="user-text user-1-text">
+                        <div class="chat-text">
+                          I like Blue. Shall we be ShoeMates?
+                          <span class="chat-date-time">
+                            27.09.2018 / 11:43 am
+                          </span>
+                        </div>
+                      </div>
+                      <div class="user-text user-2-text">
+                        <div class="chat-text">
+                          Good Idea :) My number is +45421451
+                          <span class="chat-date-time">
+                            27.09.2018 / 11:43 am
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-text-area">
+                      <div class="input-area">
+                        <form>
+                          <div class="form-group">
+                            <div class="emoji-picker">
+                              <a href="#"
+                                ><img
+                                  src="./frontend_test/images/Icon-emoticon.png"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Write message..."
+                              id="chat-input"
+                            />
+                            <button
+                              id="sent"
+                              class="btn btn-primary  disabled"
+                              disabled
+                            >
+                              SEND
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Seller Model -->
+    <div
+      class="modal fade"
+      id="report_seller"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="report_sellerTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="report_sellerTitle">
+              Write about seller
+            </h1>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <textarea
+              name=""
+              id="input"
+              class="form-control"
+              rows="3"
+              required="required"
+            ></textarea>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-small"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary btn-small">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="frontend_test/js/jquery-1.11.3.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="frontend_test/js/bootstrap.bundle.min.js"></script>
+    <!-- slick slider js -->
+    <script src="./frontend_test/js/slick.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="frontend_test/js/custom.js"></script>
+  </body>
+</html>
